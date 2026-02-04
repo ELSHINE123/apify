@@ -9,27 +9,27 @@
                 "description": "Name of the business"
             },
             "rating": {
-                "type": ["number", "null"],
+                "type": "number",
                 "title": "Rating",
                 "description": "Google Maps rating (0-5 stars)"
             },
             "review_count": {
-                "type": ["integer", "null"],
+                "type": "integer",
                 "title": "Review Count",
                 "description": "Number of Google Maps reviews"
             },
             "address": {
-                "type": ["string", "null"],
+                "type": "string",
                 "title": "Address",
                 "description": "Business street address"
             },
             "phone": {
-                "type": ["string", "null"],
+                "type": "string",
                 "title": "Phone",
                 "description": "Business phone number"
             },
             "website": {
-                "type": ["string", "null"],
+                "type": "string",
                 "title": "Website",
                 "description": "Business website URL (null if no website)"
             },
