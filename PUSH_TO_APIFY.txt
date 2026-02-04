@@ -1,0 +1,70 @@
+# Push to Apify - Quick Reference
+
+## 3 Commands to Deploy
+
+### 1. Install Apify CLI
+```bash
+npm install -g apify-cli
+```
+
+### 2. Login to Apify
+```bash
+apify login
+```
+(Opens browser - log in with your Apify account)
+
+### 3. Push to Apify
+```bash
+cd c:\Users\user\Desktop\create\ai-automation-nocode\google-maps-scraper
+apify push
+```
+
+That's it! Your Actor will be deployed.
+
+## After Push
+
+1. Go to https://console.apify.com
+2. Find "google-maps-scraper" in your Actors list
+3. Click "Run" to test it
+4. Configure search queries and filters
+5. Click "Start" to execute
+6. View results in the Dataset
+
+## What Gets Deployed
+
+✅ Your Python scraper code
+✅ Docker container configuration
+✅ Input schema (for easy UI configuration)
+✅ Dataset schema (output format)
+✅ All dependencies
+
+## Access Your Actor
+
+After deployment:
+- **Apify Console**: https://console.apify.com
+- **Apify Store**: https://apify.com/store
+- **API Endpoint**: Use your Actor ID to call via REST API
+
+## Example Input
+
+```json
+{
+  "searchQueries": [
+    "plumbers in New York",
+    "electricians in Los Angeles"
+  ],
+  "maxResultsPerQuery": 20,
+  "filterNoWebsite": true,
+  "minRating": 4.0
+}
+```
+
+## Need Help?
+
+- **Apify Docs**: https://docs.apify.com
+- **CLI Docs**: https://docs.apify.com/cli
+- **Support**: https://apify.com/support
+
+---
+
+Ready? Run: `apify push` 🚀

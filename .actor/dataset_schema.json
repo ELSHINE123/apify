@@ -1,0 +1,44 @@
+{
+    "sampleDataSchema": {
+        "title": "Google Maps Business",
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string",
+                "title": "Business Name",
+                "description": "Name of the business"
+            },
+            "rating": {
+                "type": ["number", "null"],
+                "title": "Rating",
+                "description": "Google Maps rating (0-5 stars)"
+            },
+            "review_count": {
+                "type": ["integer", "null"],
+                "title": "Review Count",
+                "description": "Number of Google Maps reviews"
+            },
+            "address": {
+                "type": ["string", "null"],
+                "title": "Address",
+                "description": "Business street address"
+            },
+            "phone": {
+                "type": ["string", "null"],
+                "title": "Phone",
+                "description": "Business phone number"
+            },
+            "website": {
+                "type": ["string", "null"],
+                "title": "Website",
+                "description": "Business website URL (null if no website)"
+            },
+            "scraped_at": {
+                "type": "string",
+                "title": "Scraped At",
+                "description": "ISO timestamp when data was scraped"
+            }
+        },
+        "required": ["name", "scraped_at"]
+    }
+}

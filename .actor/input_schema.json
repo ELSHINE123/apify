@@ -1,0 +1,47 @@
+{
+    "title": "Google Maps Business Scraper Input",
+    "type": "object",
+    "description": "Configuration for scraping Google Maps businesses",
+    "properties": {
+        "searchQueries": {
+            "title": "Search Queries",
+            "type": "array",
+            "description": "List of Google Maps search queries (e.g., 'plumbers in New York')",
+            "items": {
+                "type": "string"
+            },
+            "example": ["plumbers in New York", "electricians in Los Angeles"],
+            "prefill": ["plumbers in New York"]
+        },
+        "maxResultsPerQuery": {
+            "title": "Max Results Per Query",
+            "type": "integer",
+            "description": "Maximum number of businesses to extract per search query",
+            "minimum": 1,
+            "maximum": 50,
+            "default": 20
+        },
+        "filterNoWebsite": {
+            "title": "Filter: No Website Only",
+            "type": "boolean",
+            "description": "Only return businesses without a website (perfect for landing pages)",
+            "default": true
+        },
+        "minRating": {
+            "title": "Minimum Rating",
+            "type": ["number", "null"],
+            "description": "Only return businesses with at least this rating (0-5)",
+            "minimum": 0,
+            "maximum": 5,
+            "default": null
+        },
+        "minReviewCount": {
+            "title": "Minimum Review Count",
+            "type": ["integer", "null"],
+            "description": "Only return businesses with at least this many reviews",
+            "minimum": 0,
+            "default": null
+        }
+    },
+    "required": ["searchQueries"]
+}
