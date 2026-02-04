@@ -13,6 +13,9 @@ RUN echo "Python version:" \
     && echo "All installed Python packages:" \
     && pip freeze
 
+# Install Playwright browsers
+RUN playwright install
+
 # Copy the rest of the source code
 COPY . ./
 
