@@ -11,9 +11,6 @@
     "dockerfile": "./Dockerfile",
     "readme": "./README.md",
     "input": "./input_schema.json",
-    "storages": {
-        "dataset": "./dataset_schema.json"
-    },
     "environmentVariables": {
         "APIFY_HEADLESS": "1"
     }
