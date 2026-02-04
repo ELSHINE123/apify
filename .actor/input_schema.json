@@ -33,7 +33,7 @@
         },
         "minRating": {
             "title": "Minimum Rating",
-            "type": ["number", "null"],
+            "type": "number",
             "description": "Only return businesses with at least this rating (0-5)",
             "editor": "number",
             "minimum": 0,
@@ -41,7 +41,7 @@
         },
         "minReviewCount": {
             "title": "Minimum Review Count",
-            "type": ["integer", "null"],
+            "type": "integer",
             "description": "Only return businesses with at least this many reviews",
             "editor": "number",
             "minimum": 0
