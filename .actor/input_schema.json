@@ -8,6 +8,7 @@
             "title": "Search Queries",
             "type": "array",
             "description": "List of Google Maps search queries (e.g., 'plumbers in New York')",
+            "editor": "json",
             "items": {
                 "type": "string"
             },
@@ -18,6 +19,7 @@
             "title": "Max Results Per Query",
             "type": "integer",
             "description": "Maximum number of businesses to extract per search query",
+            "editor": "number",
             "minimum": 1,
             "maximum": 50,
             "default": 20
@@ -26,12 +28,14 @@
             "title": "Filter: No Website Only",
             "type": "boolean",
             "description": "Only return businesses without a website (perfect for landing pages)",
+            "editor": "checkbox",
             "default": true
         },
         "minRating": {
             "title": "Minimum Rating",
             "type": ["number", "null"],
             "description": "Only return businesses with at least this rating (0-5)",
+            "editor": "number",
             "minimum": 0,
             "maximum": 5,
             "default": null
@@ -40,6 +44,7 @@
             "title": "Minimum Review Count",
             "type": ["integer", "null"],
             "description": "Only return businesses with at least this many reviews",
+            "editor": "number",
             "minimum": 0,
             "default": null
         }
